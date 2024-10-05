@@ -53,3 +53,5 @@ public class Renter {
         return Objects.hash(lastName, firstName, identityDocument, driverLicense);
     }
 }
+
+
