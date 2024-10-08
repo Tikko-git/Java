@@ -69,5 +69,3 @@ public class Rental {
         return Objects.hash(car, renter, pickupLocation, startDate);
     }
 }
-
-
