@@ -1,8 +1,12 @@
 package lab2;
 
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
+
 import java.time.LocalDate;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertTrue;
 
 public class RentalTest {
 

@@ -1,19 +1,20 @@
 package lab2;
 
 import lab2.Car;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import lab2.service.CarRentalService;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.testng.Assert.assertEquals;
 
 public class CarRentalServiceTest {
 
     private CarRentalService carRentalService;
 
-    @BeforeEach
+    @BeforeMethod
     public void setUp() {
         List<Car> cars = Arrays.asList(
                 Car.builder().type("Economy").brand("Toyota").dailyPrice(50.0).features("Air conditioning").build(),
