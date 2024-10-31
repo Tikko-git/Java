@@ -71,6 +71,13 @@ public class Car {
         this.dailyPrice = builder.dailyPrice;
     }
 
+    /**
+     * Getter for dailyPrice.
+     */
+    public double getDailyPrice() {
+        return dailyPrice;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
@@ -88,7 +95,7 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return Objects.equals(vin, car.vin) ;
+        return Objects.equals(vin, car.vin);
     }
 
     @Override
